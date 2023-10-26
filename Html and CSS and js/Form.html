@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Survey Form</title>
+  <link rel="stylesheet" href="form.css">
+</head>
+<body>
+  <div id="survey-form">
+    <h1>Survey Form</h1>
+    <label for="first-name">First Name:</label>
+    <input type="text" id="first-name" required>
+
+    <label for="last-name">Last Name:</label>
+    <input type="text" id="last-name" required>
+
+    <label for="date-of-birth">Date of Birth:</label>
+    <input type="date" id="date-of-birth" required>
+
+    <label for="country">Country:</label>
+    <select id="country" required>
+      <option value="">Please select a country</option>
+      <option value="India">India</option>
+      <option value="United States">United States</option>
+      <option value="United Kingdom">United Kingdom</option>
+      <option value="Canada">Canada</option>
+      <option value="Australia">Australia</option>
+    </select>
+
+    <label for="gender">Gender:</label>
+    <input type="checkbox" id="gender-male" value="Male"> Male
+    <input type="checkbox" id="gender-female" value="Female"> Female
+
+    <label for="profession">Profession:</label>
+    <input type="text" id="profession" required>
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" required>
+
+    <label for="mobile-number">Mobile Number:</label>
+    <input type="tel" id="mobile-number" required>
+
+    <div class="buttons">
+      <button type="submit" id="submit-button">Submit</button>
+      <button type="reset" id="reset-button">Reset</button>
+    </div>
+  </div>
+
+  <div id="popup" class="hidden">
+    <div class="popup-content">
+      <h1>Survey Results</h1>
+      <ul id="survey-results"></ul>
+    </div>
+    <button type="button" id="close-popup">Close</button>
+  </div>
+</body>
+</html>
